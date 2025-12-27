@@ -1,11 +1,15 @@
 -- Mie Hub Loader with Auto-Execute on Teleport
 
 local GAMES = {
-    -- Practical Basketball - REPLACE WITH ACTUAL PLACEID
-    [80681221431821] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER",
+    -- Practical Basketball (Multiple PlaceIds for lobby, main game, etc.)
+    [8068122143] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER",
+    [115776365257536] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER", -- Lobby
+    [118669925076970] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER", -- Main game
     
-    -- Ghoul Re - 
-    [72368345999613] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE",
+    -- Ghoul Re (Multiple PlaceIds)
+    [7236834599] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE",
+    [135836302294156] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE", -- Lobby
+    
 }
 
 local function loadScript()
