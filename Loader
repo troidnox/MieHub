@@ -1,8 +1,5 @@
 if game.PlaceId == 80681221431821 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER", true))()
+elseif game.PlaceId == 72368345999613 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE", true))()
 end
-
-if game.PlaceId == 72368345999613 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE"))()
-end
-
