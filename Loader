@@ -9,7 +9,7 @@ local GAMES = {
     -- Ghoul Re (Multiple PlaceIds)
     [7236834599] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE",
     [135836302294156] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE", -- Lobby
-    
+    [91797414023830] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE",
 }
 
 local function loadScript()
