@@ -1,40 +1,8 @@
--- Mie Hub Loader with Auto-Execute on Teleport
-local GAMES = {
-    -- Practical Basketball
-    ["8068122143"] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER",
-    ["115776365257536"] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER",
-    ["118669925076970"] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER",
-    
-    -- Ghoul Re
-    ["7236834599"] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE",
-    ["135836302294156"] = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE",
-}
-
-local DEFAULT_SCRIPT = "https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER" -- Loads on any unsupported game
-
-local function loadScript()
-    local placeId = tostring(game.PlaceId)
-    local scriptUrl = GAMES[placeId] or DEFAULT_SCRIPT -- Use default if not in table
-    
-    print("[Mie Hub] Current PlaceId:", placeId)
-    print("[Mie Hub] Loading script...")
-    
-    local success, result = pcall(function()
-        return loadstring(game:HttpGet(scriptUrl))()
-    end)
-    
-    if not success then
-        warn("[Mie Hub] Failed to load script:", result)
-    else
-        print("[Mie Hub] Script loaded successfully!")
-    end
+if game.PlaceId == 80681221431821 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER"))()
 end
 
--- Queue script to auto-execute after teleport
-if queueonteleport then
-    queueonteleport([[
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/LOADER"))()
-    ]])
+if game.PlaceId == 72368345999613 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE"))()
 end
 
-loadScript()
