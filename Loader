@@ -1,5 +1,46 @@
-if game.PlaceId == 80681221431821 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER", true))()
-elseif game.PlaceId == 72368345999613 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE", true))()
-end
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Xes Hub",
+   LoadingTitle = "Xes Hub",
+   LoadingSubtitle = "by Xes",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil,
+      FileName = "XesHub"
+   },
+   Discord = {
+      Enabled = false,
+   },
+   KeySystem = false,
+})
+
+local MainTab = Window:CreateTab("Scripts", 4483362458)
+
+local Section = MainTab:CreateSection("Game Scripts")
+
+local Button1 = MainTab:CreateButton({
+   Name = "GHOUL RE",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE", true))()
+      Rayfield:Notify({
+         Title = "GHOUL RE",
+         Content = "Script Executed!",
+         Duration = 3,
+         Image = 4483362458,
+      })
+   end,
+})
+
+local Button2 = MainTab:CreateButton({
+   Name = "PRACTICAL BASKETBALL",
+   Callback = function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/MieHUBER", true))()
+      Rayfield:Notify({
+         Title = "PRACTICAL BASKETBALL",
+         Content = "Script Executed!",
+         Duration = 3,
+         Image = 4483362458,
+      })
+   end,
+})
