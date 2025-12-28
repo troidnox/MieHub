@@ -37,18 +37,6 @@ local MainTab = Window:CreateTab("Scripts", 4483362458)
 
 local Section = MainTab:CreateSection("Game Scripts")
 
-local Button1 = MainTab:CreateButton({
-   Name = "GHOUL RE",
-   Callback = function()
-      loadstring(game:HttpGet("https://raw.githubusercontent.com/troidnox/MieHub/refs/heads/main/GhoulRE", true))()
-      Rayfield:Notify({
-         Title = "GHOUL RE",
-         Content = "Script Executed!",
-         Duration = 3,
-         Image = 4483362458,
-      })
-   end,
-})
 
 local Button2 = MainTab:CreateButton({
    Name = "PRACTICAL BASKETBALL",
